@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html><head>
+<title>Mittens Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="HTML KickStart is a ultra–lean set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to give you a headstart and save you a lot of hours on your next web project." />
+<meta name="copyright" content="Joshua Gatcke 99lime.com All Rights Reserved" />
+<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />                          <!-- CUSTOM STYLES -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/kickstart.js"></script>                                  <!-- KICKSTART -->
+</head><body>
+<!-- ===================================== END HEADER ===================================== -->
+<nav class="navbar">
+<a class="hide-phone" id="logo" href="/"><i class="fa fa-angle-right"></i> Mittenz <span>Home</span></a>
+<ul>
+<li><a href="/"><span>Mittens</span></a></li>
+<!-- oof
+<li><a href="https://mittenz-games.glitch.me/"><span></span>Games</a></li>
+<li><a href="/">What <span>we </span>do</a></li> -->
+<li><a href="/">MC <span>- </span>Clock</a></li>
+</ul>
+</nav>
+<div class="callout callout-top clearfix">
+	<div class="grid">
+		<h1>Mittens Homepage</h1>
+		<h4>Homepage of a gaming clan<br />created by Orago.</h4>
+		<div class="col_3">
+		<i class="fa fa-mobile fa-4x"></i><br />
+		Mobile friendly
+		</div>
+		
+		<div class="col_3">
+		<i class="fa fa-github fa-4x"></i><br />
+		Open Source Scripts
+		</div>
+		
+		<div class="col_3">
+		<i class="fa fa-flag fa-4x"></i><br />
+    always active<br />
+		</div>
+		
+		<div class="col_3 omega">
+		<i class="fa fa-tint fa-4x"></i><br />
+		Always Updated
+
+		</div> <!--  class="fa fa-cloud-download" github ting-->
+		<div class="clear"></div><br />
+		<a class="button red large" href="/"><i></i> Nothing Yet</a> 
+		<span style="white-space: nowrap;">
+		<a class="button blue large" href="https://twitter.com/masterorago"><i class="fa fa-twitter"></i></a>
+		<a class="button blue large" href="mailto:oragomosh@gmail.com"><i class="fa fa-envelope"></i></a></span><br />
+		
+	</div>
+</div>
+
+<div class="grid">
+   <!-- ===================================== 
+	LISTS 
+===================================== -->
+<h3 id="lists">Member Ranks</h3>
+<ul class="tabs">
+<li><a href="#leader-ranks">Leaders</a></li>
+<li><a href="#special-ranks">Specials</a></li>
+<li><a href="#member-ranks">Members</a></li>
+<li><a href="#member-ranks2">Members 2</a></li>
+</ul>
+
+	<div id="leader-ranks" class="tab-content">
+	<div class="col_3">
+	<h4>Owner</h4>
+	<ul>
+	<li>Orago</li>
+	</ul>
+	</div>
+	
+	<div class="col_3">
+	<h4>Admins</h4>
+	<ul>
+	<li>DylanHess</li>
+
+	</ul>
+	</div>
+	
+	<div class="col_3">
+	<h4>Moderators</h4>
+	<ul class="icons">
+	<li>h</li>
+	</ul>
+	</div>
+		<!--<li><i class="fa fa-check"></i> Apple</li>
+	<li><i class="fa fa-check"></i> Banana</li>
+	<li><i class="fa fa-check"></i> Orange</li>
+	<li><i class="fa fa-remove"></i> Pear</li>-->
+
+	</div>
+	
+	<div id="special-ranks" class="tab-content">
+  <h4></h4>
+<li>hi</li>
+	</div>
+	
+	<div id="member-ranks" class="tab-content">
+
+	</div>
+	
+	<div id="member-ranks2" class="tab-content">
+
+	</div>
+	
+	<div id="list-alt" class="tab-content">
+<pre>
+&lt;!-- List Alternative Style --&gt;
+&lt;ul class=&quot;alt&quot;&gt;
+&lt;li&gt;Apple&lt;/li&gt;
+&lt;li&gt;Banana&lt;/li&gt;
+&lt;li&gt;Orange&lt;/li&gt;
+&lt;li&gt;Pear&lt;/li&gt;
+&lt;/ul&gt;</pre>
+	</div>
+
+<!-- ===================================== 
+	MENUS
+===================================== -->
+<h3 id="menus">Games</h3>
+<ul class="tabs">
+<li><a href="#all-games">All Games</a></li>
+<li><a href="#flash-games">Flash Games</a></li>
+<li><a href="#html-games">Html Games</a></li>
+<li><a href="#oragames">Games from Orago</a></li>
+<!--<li><a href="#menu-vertical-right">Vertical.right</a></li>-->
+</ul>
+
+	<div id="all-games" class="tab-content">
+<footer>
+      <a href="https://orago-happywheels.glitch.me/">Happy Wheels</a> |
+      <a href="lists/btd.html">Bloons Tower Defense</a>  |
+      <a href="https://meowpbackup.glitch.me/">Meowp.ga (Diep.io Replica)</a>  |
+      <a href="https://orago-ab.glitch.me/">Angry Birds</a>  |
+      <a href="https://orago-hextris.glitch.me/">Hextris</a>  |
+      <a href="https://mittenz-chess.glitch.me/">Mittenz - 3d Chess</a>  |
+      <a href="https://mind-bend.glitch.me/">Mind Bend</a>  |
+      <a href="https://radius-raid.glitch.me/">Radius-Raid</a>  |
+      <a href="https://astray.glitch.me/">Astray</a>  |
+      <a href="https://infinite-mario.glitch.me/">Infinite Mario</a>  |
+      <a href="https://starshot.glitch.me/">StarShot</a>  |
+      <a href="https://supercold.glitch.me/">SuperCold</a>  |
+      <a href="https://pmi.glitch.me/">Protect MI</a>  |
+      <a href="https://bluub.glitch.me/">Bluub - Physics Game</a>  |
+    </footer>
+	</div>
+  
+<!-- ===================================== 
+	Html and Flash Games
+===================================== -->
+<!--\/ Flash Games \/-->
+  <div id="flash-games" class="tab-content">
+  <a href="https://orago-happywheels.glitch.me/">Happy Wheels</a> |
+  <a href="https://btd-5-hacked.glitch.me/">BTD - 5 Hacked</a> |
+  <a href="https://orago-ab.glitch.me/">Angry Birds</a>  |
+  
+  </div>
+<!--\/ Html Games \/-->
+  <div id="html-games" class="tab-content">
+  <a href="https://mittenz-chess.glitch.me/">Mittenz - 3d Chess</a>  |
+  <a href="https://orago-hextris.glitch.me/">Hextris</a>  |
+  <a href="https://meowpbackup.glitch.me/">Meowp.ga</a>  |
+  <a href="https://mind-bend.glitch.me/">Mind Bend</a>  |
+  <a href="https://astray.glitch.me/">Astray</a>  |
+  <a href="https://starshot.glitch.me/">StarShot</a>  |
+  <a href="https://supercold.glitch.me/">SuperCold</a>  |
+  <a href="https://pmi.glitch.me/">Protect MI</a>  |
+  <a href="https://bluub.glitch.me/">Bluub - Physics Game</a>  |
+  </div>
+
+<!-- \/ Orago Games \/ -->
+  <div id="oragames" class="tab-content">
+  <a href="https://meowpbackup.glitch.me/">Meowp.ga</a>  |
+  </div>
+  <!--END GRID WRAP-->
+
+<div class="callout clearfix">
+	<div class="grid">
+		<a class="button red large" href="/"><i class="fa fa-download-cloud"></i> Nothing </a> 
+		<span style="white-space: nowrap;">
+		<a class="button blue large" href="https://twitter.com/MasterOrago"><i class="fa fa-twitter"></i></a>
+		<a class="button blue large" href="mailto:oragomosh@gmail.com"><i class="fa fa-envelope"></i></a></span><br />
+	</div>
+</div>
+
+<!-- Begin MailChimp Signup Form -->
+<div class="grid center" id="mc_embed_signup">
+<form action="http://99lime.us4.list-manage2.com/subscribe/post?u=f4a8f36be8ffba6bf0580ef5f&amp;id=67a4916516" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+<!--End mc_embed_signup-->
+
+<!-- ===================================== START FOOTER ===================================== -->
+<div class="clear"></div>
+<div id="footer">
+&copy; Copyright 2019 All Rights Reserved. This website was built by
+<a href="/">Orago</a>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1641401-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body></html>
