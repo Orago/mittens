@@ -1,0 +1,61 @@
+document.write('<div id="mySidenav" class="sidenav"><h1>Search</h1>');
+document.write('<div class="row">');
+document.write('<div class="left" style="background-color:#bbb;">');
+document.write('<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>');
+document.write('<input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." title="Type in a category">');
+document.write('<ul id="myMenu">');
+document.write('<li><a href="/">Home</a></li>');
+document.write('<li><a href="/tools/redirects/forum.html">Forum</a></li>');
+document.write('<li><a href="/tools/redirects/support.html">Meowcial</a></li>');
+document.write('<li><a href="/tools/timers/">Clocks</a></li>');
+document.write('<li><a href="/fun/text-edit/">Text Editor</a></li>');
+document.write('<li><a href="https://www.youtube.com/channel/UCbVQOO0xb57ja74eLJQJ3Kg">Youtube Channel</a></li>');
+document.write('<li><a href="https://discord.gg/PgW8nq7">Discord Server</a></li>');
+document.write('<li><a href="https://github.com/Orago">Github</a></li>');
+document.write('<li><a href="/tools/donations/">Donate to Orago</a></li>');
+document.write('<li><a href="#"></a></li>');
+document.write('</ul>');
+document.write('</div>');
+document.write('</div>');
+document.write('</div>');
+//document.write('');
+//document.write('');
+//document.write('');
+
+
+
+
+function Search() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+var link = document.createElement('link');  
+  
+        // set the attributes for link element 
+           link.rel = 'stylesheet';  
+      
+        link.type = 'text/css'; 
+      
+        link.href = '/assets/css/searchmenu.css';  
+  
+        // Get HTML head element to append  
+        // link element to it  
+        document.getElementsByTagName('HEAD')[0].appendChild(link);  

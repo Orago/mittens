@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Project Mittens by Orago
+-->
+<html>
+	<head>
+		<title>Mittens - World Clock</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Project Mittens - World Clock</h1>
+					<p>A project started by <a href="/orago">ORAGO</a></p>
+				</div>
+			</header>
+<body>
+  <script src="/assets/js/bubbly-bg.js"></script>
+  <script src="/assets/js/schemes/normal.js"></script>
+</body>
+    <script src="/assets/js/darkmode-js.min.js"></script>
+<script>
+  new Darkmode().showWidget();
+</script>
+		<!-- Wrapper -->
+			<div id="wrapper">
+<table border="0" width="200" cellspacing="0" cellpadding="3">
+<form name="where">
+  <tr>
+    <td width="100%">
+<select name="city" size="1" onchange="updateclock(this);"> 
+<option value="" selected>Local time</option>
+<option value="0">London GMT</option> 
+<option value="1">Rome</option>
+<option value="7">Bangkok</option>
+<option value="8">Hong Kong</option>
+<option value="9">Tokyo</option> 
+<option value="10">Sydney</option>
+<option value="12">Fiji</option>
+<option value="-10">Hawaii</option>
+<option value="-8">San Francisco</option> 
+<option value="-5">New York</option>
+<option value="-3">Buenos Aires</option>
+</select>
+
+</td>
+  </tr>
+  <tr>
+    <td width="100%">
+<script language="JavaScript">
+if (document.all||document.getElementById)
+document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br />')
+
+zone=0;
+isitlocal=true;
+ampm='';
+
+function updateclock(z){
+zone=z.options[z.selectedIndex].value;
+isitlocal=(z.options[0].selected)?true:false;
+}
+
+function WorldClock(){
+now=new Date();
+ofst=now.getTimezoneOffset()/60;
+secs=now.getSeconds();
+sec=-1.57+Math.PI*secs/30;
+mins=now.getMinutes();
+min=-1.57+Math.PI*mins/30;
+hr=(isitlocal)?now.getHours():(now.getHours() + parseInt(ofst)) + parseInt(zone);
+hrs=-1.575+Math.PI*hr/6+Math.PI*parseInt(now.getMinutes())/360;
+if (hr < 0) hr+=24;
+if (hr > 23) hr-=24;
+ampm = (hr > 11)?"PM":"AM";
+statusampm = ampm.toLowerCase();
+
+hr2 = hr;
+if (hr2 == 0) hr2=12;
+(hr2 < 13)?hr2:hr2 %= 12;
+if (hr2<10) hr2="0"+hr2
+
+var finaltime=hr2+':'+((mins < 10)?"0"+mins:mins)+':'+((secs < 10)?"0"+secs:secs)+' '+statusampm;
+
+if (document.all)
+worldclock.innerHTML=finaltime
+else if (document.getElementById)
+document.getElementById("worldclock").innerHTML=finaltime
+else if (document.layers){
+document.worldclockns.document.worldclockns2.document.write(finaltime)
+document.worldclockns.document.worldclockns2.document.close()
+}
+
+
+setTimeout('WorldClock()',1000);
+}
+
+window.onload=WorldClock
+//-->
+</script>
+
+<!--Place holder for NS4 only-->
+<ilayer id="worldclockns" width="100%" height="35"><layer id="worldclockns2" width="100%" height="35" left="0" top="0" style="font:bold 16px Arial;"></layer></ilayer>
+</td>
+  </tr></form>
+</table>
+<br><br>
+        <!-- CTA -->
+					<section id="cta" class="main special">
+						<ul class="actions">
+              <li><a href="/" class="button big">HomePage</a></li>
+              <br><br>
+							<li><a href="/tools/timers" class="button big">Back</a></li>
+						</ul>
+					</section>
+        
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/master_orago/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a onclick="mail()" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+            <!-- Copyright -->
+						<p class="copyright">&copy;
+              <script language="JavaScript"> today=new Date();y0=today.getFullYear();</script>
+              2018-<script language="JavaScript"> document.write(y0);</script> 
+      Project Mittens.</p>
+					</footer>
+			</div>
+    
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+      <script src="/assets/js/mailme.js"></script>
+      <script src="/assets/js/localstore.js"></script>
+      
+	</body>
+</html>
