@@ -66,7 +66,7 @@
 							</ul></article></section>
         
             <style>
-            img.image {height: 250px;width:365px;} .column {float: left;width: 517px;margin-bottom: 16px;padding: 0 8px;} @media screen and (max-width: 650px) {.column {width: 100%;display: block;}} .card {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);} .container {padding: 0 16px;} .container::after, .row::after {content: "";clear: both;display: table;} .title {color: grey;} .btn {border: none;outline: 0;display: inline-block;padding: 8px;color: white;background-color: #000;text-align: center;cursor: pointer;width: 100%;} .btn:hover {background-color: #555;}
+            img.image {height: 250px;width:45vh;} .column {float: left;width: 48vh;margin-bottom: 16px;padding: 0 8px;} @media screen and (max-width: 650px) {.column {width: 100%;display: block;}} .card {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);width:45vh;} .container {padding: 0 16px;background-color:#361335;} .container::after, .row::after {content: "";clear: both;display: table;} .title {color: grey;} .btn {border: none;margin: auto;outline: 0;display: inline-block;padding: 8px;color: white;background-color: #000;text-align: center;cursor: pointer;width:40vh} .btn:hover {background-color: #555;}
             </style>
             
         
@@ -99,7 +99,7 @@
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>example@example.com</p>
         <p><a href="#" class="btn">Contact</a></p>
-    </div></div></div><p onclick="showoptions()" style="height:625px;" class="button big"><br><br><br><br>B<br>a<br>c<br>k</p></div>
+    </div></div></div><br><p onclick="showoptions()" style="width:60vh;position: absolute;" class="button big">B   a   c   k</p></div>
         
         
         
@@ -131,7 +131,7 @@
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>example@example.com</p>
         <p><a href="#" class="btn">Contact</a></p>
-    </div></div></div><p onclick="showoptions()" style="height:625px;" class="button big"><br><br><br><br>B<br>a<br>c<br>k</p></div>
+    </div></div></div><br><p onclick="showoptions()" style="width:150vh;" class="button big">B   a   c   k</p></div>
             
 
 
@@ -151,8 +151,8 @@
                                  document.getElementById(" ").style.display = "none";
             
           }
-          function developer_show(){document.getElementById("developer_item").style.display = "flex";hideoptions();}
-          function manager_show(){document.getElementById("manager_item").style.display = "flex";hideoptions();}
+          function developer_show(){document.getElementById("developer_item").style.display = "initial";hideoptions();}
+          function manager_show(){document.getElementById("manager_item").style.display = "initial";hideoptions();}
           window.addEventListener("load", function () {hideother(); showoptions();
           
           });
