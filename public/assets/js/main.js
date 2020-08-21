@@ -1,18 +1,9 @@
-//Loading menu interface
-window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");loader.className += " hidden"; /* class "loader hidden"*/
-  /*localStorage.setItem("nav", "false");/* Disable the navigation bar on load*/ /*Empty space*/});
-          
-/* 
-document.addEventListener('keydown', function(event) {//Nav bar listener
-  if (event.code == 'KeyI' && (event.ctrlKey || event.metaKey)) {
-    if (localStorage.getItem("nav") == "false"){openNav(); // Messy way to open navigation bar
-document.getElementById("mySearch").focus();localStorage.setItem("nav", "true");
-   }else {closeNav(); // Messy way to open navigation bar
-          localStorage.setItem("nav", "false");document.getElementById("mySearch").blur();}}});
-*/
 
-
+// on load, start our initialization state
+window.onload = function() {
+  state("init");
+  // followMe("init");
+}
 $(function() {
 
 		var	$window 	= $(window),

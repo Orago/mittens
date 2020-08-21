@@ -1,62 +1,52 @@
-<!DOCTYPE HTML>
-<!--
-	Project Mittens by Orago
--->
-<html>
+
+<html >
 	<head>
-		<title>Mittens - Credits</title>
+		<title>Mittens Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" /><!--Most of the css code-->
+    
 	</head>
-   <div class="parallax"><div class="parallax__layer parallax__layer__0"><!---->
-    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true" /></div><div class="parallax__layer parallax__layer__1"><!---->
-    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_1.png?raw=true" /></div><div class="parallax__layer parallax__layer__2">
-    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_2.png?raw=true" /></div><div class="parallax__layer parallax__layer__3"><!---->
-    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_3.png?raw=true" /></div><div class="parallax__layer parallax__layer__4">
-    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_4.png?raw=true" /></div><div class="parallax__layer parallax__layer__5"><!---->
-    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_5.png?raw=true" /></div><div class="parallax__layer parallax__layer__6">
-    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true" /><!----></div><div class="parallax__cover"></div>
-	
-	<body>
+  <!--Parallax mountains-->
+<script src="/assets/js/loader.js"></script>
+    <body>
 		<!-- Header -->
 			<header id="header" class="alt">
 				<div class="inner">
-					<h1>Project Mittens - Creddits</h1>
+					<h1>Mittens Homepage</h1>
 					<p>A project started by <a href="/orago">ORAGO</a></p>
 				</div>
 			</header>
-    
-<body>
-  <script src="/assets/js/bubbly-bg.js"></script>
-  <script src="/assets/js/schemes/normal.js"></script>
-</body>
-    <script src="/assets/js/darkmode-js.min.js"></script>
-<script>
-  new Darkmode().showWidget();
-</script>
+
 		<!-- Wrapper -->
+      
+
 			<div id="wrapper">
-<!-- Buttons -->
-        <br><br><br><br>
-<a href="https://www.w3schools.com/" class="button">W3Schools (html tutorials)</a>  
-<a href="https://darkmodejs.learn.uno/" class="button">Dark-Mode Js (dark mode circle in bottom right)</a>  
-        <!--<a href="https://github.com/tipsy/bubbly-bg" class="button">Bubbly Js (bubbles on background)</a>
-        <a href="https://github.com/tipsy/bubbly-bg" class="button">Bubbly Js (bubbles on background)</a>-->
-        
-        
-        
-        
-        <br><br>
-        <!-- CTA -->
+<div class="row">
+  <div class="left" >
+    <br><br><br>
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." value="" title="Type in a category">
+    
+    <ul id="myMenu">
+<li><a href="https://www.w3schools.com/">W3Schools [simple but useful tutorials]</a></li>
+<li><a href="/">Various images on this website</a></li>
+
+<br>
+
+<!--      <li><a href="#"></a></li>      -->
+    </ul>
+  </div>
+  </div>
+          <!-- CTA -->
 					<section id="cta" class="main special">
 						<ul class="actions">
               <li><a href="/" class="button big">HomePage</a></li>
               <br><br>
-							<li><a href="/tools" class="button big">Back</a></li>
+							<li><a href="/#nav" class="button big">Back</a></li>
 						</ul>
 					</section>
-        
+
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
@@ -65,21 +55,39 @@
 							<li><a href="https://www.instagram.com/master_orago/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a onclick="mail()" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
+            
             <!-- Copyright -->
-						<p class="copyright">&copy;
-              <script language="JavaScript"> today=new Date();y0=today.getFullYear();</script>
-              2018-<script language="JavaScript"> document.write(y0);</script> 
-      Project Mittens.</p>
+						<p class="copyright">&copy;<script language="JavaScript"> today=new Date();y0=today.getFullYear();</script>2018-<script language="JavaScript"> document.write(y0);</script> Project Mittens.</p>
 					</footer>
 			</div>
+    <script>
+    let params = (new URL(document.location)).searchParams;
+    var text = document.getElementById('mySearch');
+    if (params.get('search')==null){text.value += "";}else{text.value += params.get('search');}
+    Search();
+    function Search() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+
+    }
     
+    </script>
+
 		<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<script src="/assets/js/main.js"></script>
-      <script src="/assets/js/mailme.js"></script>
-      <script src="/assets/js/localstore.js"></script>
-      
-     </body></div>
+			<!--required Javascript assets to run page-->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/main.js"></script>
+	</body>
 </html>
