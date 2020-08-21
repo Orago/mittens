@@ -17,15 +17,14 @@ document.write('<input type="text" id="mySearch" onkeyup="Search()" placeholder=
 document.write('<ul id="myMenu">');
 
 document.write('<li><a href="/">Home</a></li>');
-document.write('<li><a href="/tools/redirects/forum.html">Forum</a></li>');
-document.write('<li><a href="/tools/redirects/support.html">Meowcial</a></li>');
+document.write('<li><a href="/team">Team</a></li>');
 document.write('<li><a href="/tools/timers/">Clocks</a></li>');
 document.write('<li><a href="/fun/text-edit/">Text Editor</a></li>');
 document.write('<li><a href="https://www.youtube.com/channel/UCbVQOO0xb57ja74eLJQJ3Kg">Youtube Channel</a></li>');
 document.write('<li><a href="https://discord.gg/PgW8nq7">Discord Server</a></li>');
 document.write('<li><a href="https://github.com/Orago">Github</a></li>');
 document.write('<li><a href="/tools/donations/">Donate to Orago</a></li>');
-document.write('<li><a href="#"></a></li>');
+document.write('<li><a onclick="randomlink()">Random page</a></li>');
 
 document.write('</ul>');
 document.write('</div>');
@@ -34,6 +33,9 @@ document.write('</div>');
 //document.write('');
 //document.write('');
 //document.write('');
+var randomlinks=["/","/fun/text-edit/","/tools/timers/","/team","/projects"];
+function randomlink(){window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]};
+
 var nav_open;
   function openNav() {
   localStorage.setItem("nav", "true");

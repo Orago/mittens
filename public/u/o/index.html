@@ -1,0 +1,61 @@
+<link href="/assets/css/profilecard.css" rel="stylesheet">
+<input id="slider" class="customSlider" type="checkbox">
+<label for="slider"></label>
+<div class="wrapper">
+	<div class="top-icons">
+		<i onclick="window.location.href = '/team/';" class="fas fa-long-arrow-alt-left"></i>
+		<i class="far fa-heart"></i>
+	</div>
+	
+	<div class="profile">
+		<img src="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png?v=1594354728664" class="thumbnail">
+		<div class="check"><i class="fas fa-check"></i></div>
+		<h3 class="name" id="name">Orago</h3>
+		<p class="title" id="title">Code dDev & Pixel Artist</p>
+		<p class="description" id="description">Some neat little bits of sample text that needs to be replaced.</p>
+		<button type="button" class="btn">Website</button>
+	</div>
+	
+  <div class="social-icons">
+		<div class="icon">
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<h4>12.8k</h4>
+			<p>Followers</p>
+    </div>
+		
+		<div class="icon">
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<h4>12.8k</h4>
+			<p>Followers</p>
+		</div>
+		
+		<div class="icon">
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<h4>12.8k</h4>
+			<p>Followers</p>
+		</div>
+	</div>
+</div>
+
+<div class="concept">Mittenz Team by 
+	<a href="/" target="_blank">
+		<i class="fa fa-twitter"></i> Orago
+	</a>
+</div>
+
+
+<script>
+let params = (new URL(document.location)).searchParams;
+var users = '{"name":{"non":"Non-existant User","null":"Null Name","orago":"Orago","karl":"Profile two"},"title":{"non":"Non-existant User`s title","null":"Null Title","orago":"Orago","karl":"Profile two"},"avatar":{"null":"","non":"","orago":"https://i.pinimg.com/originals/9d/9d/eb/9d9deb4712cc0eef6fe752decd8c9360.jpg","karl":"https://i.pinimg.com/originals/9d/9d/eb/9d9deb4712cc0eef6fe752decd8c9360.jpg"},"description":{"non":"Non-existant User`s description","null":"Death guardian","orago":"Cat king","karl":"No Description Set"},"profiles":["orago","karl"]}'
+var user = JSON.parse(users);
+var id = "";
+if (params.get('search')==null){var id = "null"}else{var id = params.get('search');if(!user.profiles.includes(id)) {var id = "non"}}
+
+//var users = '{"name":"orago", "title":"Code Dev & Pixel Artist", "description":"Some neat little bits of sample text that needs to be replaced."}';
+
+
+document.getElementById("name").innerHTML = user.name[id];
+document.getElementById("title").innerHTML = user.title[id];
+document.getElementById("description").innerHTML = user.description[id];
+document.getElementById("avatar").src = user.avatar[id];
+</script>
