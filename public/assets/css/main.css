@@ -2,7 +2,7 @@
 @import url(font-awesome.min.css);
 @import url("https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -117,6 +117,42 @@ bruh li{
     }
   }
 
+
+
+
+
+
+
+
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+h1 .hero{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font : normal 600 72px/1 'Open Sans', sans-serif;
+	text-align: center;
+	white-space: nowrap;
+  z-index:-2;
+}
+h1 span .hero{
+	display: block;
+	margin-top: 1em;
+	font-size: 40px;
+	font-weight: 300;
+  z-index:-2;
+}
 bruh li:nth-child(1){
   animation-delay:-1.4s;
   background:#ffff00;
@@ -160,102 +196,6 @@ bruh li:nth-child(7){
   
 }
 
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
-}
-
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
 
 @keyframes animateBackground {
 	 0% {
@@ -1688,13 +1628,17 @@ z-index:-5;
 		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 8em 0 6em 0;
-		/*background-image: url("https://cdn.glitch.com/3ac09868-2d4f-4e1e-8d6d-86eb5f96282f%2Fbanner.jpg?v=1575905358299");*/
-		background-size: cover;
+		background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(https://cdn.discordapp.com/attachments/660390332772646922/746993272844451850/vaporwave-4k-k3-2048x1152.jpg) 0 0 / cover no-repeat;
+    height: 100vh;
+	  -webkit-animation: gradientAnimation 40s ease infinite;
+	  animation: gradientAnimation 40s ease infinite;
+
 		background-position: center;
 		background-attachment: fixed;
 		text-align: center;
 		position: relative;
 		cursor: default;
+    z-index:-5;
 
 	}
 
@@ -1733,8 +1677,7 @@ z-index:-5;
 		}
 
 		#header:before {
-      background-color: rgba(0, 0, 0, 0.15);
-			background-image: url("d");
+		
 			content: '';
 			display: block;
 			position: absolute;
@@ -1744,7 +1687,7 @@ z-index:-5;
 			height: 750px;
       background-color: rgba(0, 0, 0, 0.25);
 			background-image: url("images/overlay.png");
-      z-index:-5;
+
 		}
 
 		#header h1 {
@@ -1754,7 +1697,7 @@ z-index:-5;
 
 		#header .inner {
 			position: relative;
-			z-index: 1;
+			
 		}
 
 		#header.alt {
