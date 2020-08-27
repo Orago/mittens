@@ -27,11 +27,11 @@ window.addEventListener("load", event => {
          color: "#afc5c3"
       },
       {
-         img: "https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png?v=1594354728664",
-         artistName: "Null",
-         songName: "Null Song",
-         song: "",
-         color: "#f5c63d"
+         img: "https://yt3.ggpht.com/a/AATXAJzJukRhdby_FCW4IdOhQK3Qu_ryOvaB5OO9-fQN=s900-c-k-c0xffffffff-no-rj-mo",
+         artistName: "Lil Clotman",
+         songName: "Hentai Girl 4 me",
+         song: "https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2F(SOFTWILLY%20OUTRO)%20Hentai%20Girl%204%20Me320kbps.mp3?v=1598495005532",
+         color: "#808080"
       },
       {
          img: "https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png?v=1594354728664",
