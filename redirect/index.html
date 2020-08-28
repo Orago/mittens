@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+<script>
+//let params = (new URL(document.location)).searchParams;
+  var tab = window.open("", "NewWindow", "width=500, height=500");
+  
+tab.document.open();
+  
+tab.document.write("<h1>Hello World</h1><br>");
+  tab.document.write("<title>Mittens</title><br>");
+  
+  tab.document.write('<a onclick="homepage">Homepage</a> | ');
+tab.document.write('<a onclick="window.close();">Close</a> | <br>');
+tab.document.write('<script> function button(){alert("Hoi")};function homepage(){window.location.replace = "https://mittens.glitch.me;"}</ script>');
+tab.document.close();
+</script>
