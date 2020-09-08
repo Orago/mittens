@@ -22,8 +22,8 @@ const listener = app.listen(process.env.PORT, function() {
 });
 
 app.get('/505', function(req, res){
-  res.sendFile(__dirname + '/public/error/505/index.html');
+  res.sendFile(__dirname + '/error/505/index.html');
 });
 app.get('*', function(req, res){
-  res.sendFile(__dirname + '/public/error/404/index.html');
+  res.sendFile(__dirname + '/error/404/index.html');
 });
