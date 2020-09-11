@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "keyboardjs": "^2.5.1"
+    "keyboardjs": "^2.6.3"
   },
   "engines": {
     "node": "12.x"
