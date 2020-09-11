@@ -1,6 +1,5 @@
 dependencies:
   express: 4.17.1
-  keyboardjs: 2.6.4
 packages:
   /accepts/1.3.7:
     dependencies:
@@ -207,10 +206,6 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
-  /keyboardjs/2.6.4:
-    dev: false
-    resolution:
-      integrity: sha512-xDiNwiwH3KUqap++RFJiLAXzbvRB5Yw08xliuceOgLhM1o7g1puKKR9vWy6wp9H/Bi4VP0+SQMpiWXMWWmR6rA==
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -399,4 +394,3 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   express: ^4.17.1
-  keyboardjs: ^2.6.3
