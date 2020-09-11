@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Simple Maths</p>
+
+<p>Press a key inside the text field to set a red background color.</p>
+<br>--
+<footer></footer>
+
+Input: <a id="input"></a>
+
+<footer></footer>
+<br> <a id="text_input"></a>
+<footer></footer>
+
+Output: <a id="output"></a>
+
+<footer></footer>
+</body>
+</html>
+
+<style>footer {
+  margin-top: 0.2em;
+  padding-top: 0.2em;
+  border-top: 1px solid lightgrey;
+}</style>
+<script>
+var player_name = "New Player";
+var part = 0;
+new_game();
+function new_game(){
+document.getElementById("input").innerHTML = '<button onclick="start_game();">Start</button>'
+}
+
+function update_input(){
+document.getElementById("text_input").innerHTML= "Current Text: "+document.getElementById("set_name").value
+if(document.getElementById("set_name").value.length > 10){document.getElementById("set_name").value = document.getElementById("set_name").value.slice(0,10)}
+player_name = document.getElementById("set_name").value
+}
+
+function start_game(){
+document.getElementById("input").innerHTML = '<a>Welcome newbie what shall we call you <br> </a><input type="text" id="set_name" onkeyup="update_input()" placeholder="Your name here." value="" title="Please type in a name, must be under 15 characters."><button onclick="accept_name();">Accept</button>'
+}
+
+function accept_name(){
+document.getElementById("input").innerHTML = 'Your name is now '+player_name+', welcome! <button onclick="next();">Next</button>'
+document.getElementById("text_input").innerHTML= ""
+part = "1";
+}
+function next(){
+if(part==="1"){
+document.getElementById("input").innerHTML = 'This is now part one of the process.'
+document.getElementById("text_input").innerHTML= ""
+}
+}
+
+
+
+</script>
+
