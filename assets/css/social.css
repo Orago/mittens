@@ -143,13 +143,13 @@ ul li:hover:nth-child(5) a:after{
 }
 
 ul li:hover:nth-child(6) a{
-  background: #0D1821
+  background: #626161
 }
 ul li:hover:nth-child(6) a:before{
-  background: #365492;
+  background: #535353;
 }
 ul li:hover:nth-child(6) a:after{
-  background: #4a69ad;
+  background: #6B6B6B;
 }
 
 ul li:hover:nth-child(7) a{
