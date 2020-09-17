@@ -134,6 +134,67 @@ bruh li{
 	50%  { background-position: 100% 70%, 0 0;}
 	100% { background-position: 0% 30%, 0 0;}
 }
+h1 .hero{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font : normal 600 72px/1 'Open Sans', sans-serif;
+	text-align: center;
+	white-space: nowrap;
+  z-index:-2;
+}
+h1 span .hero{
+	display: block;
+	margin-top: 1em;
+	font-size: 40px;
+	font-weight: 300;
+  z-index:-2;
+}
+bruh li:nth-child(1){
+  animation-delay:-1.4s;
+  background:#ffff00;
+  box-shadow:0 0 50px #ffff00;
+  
+}
+bruh li:nth-child(2){
+  animation-delay:-1.2s;
+  background:#76ff03;
+  box-shadow:0 0 50px #76ff03;
+  
+}
+bruh li:nth-child(3){
+  animation-delay:-1s;
+  background:#f06292;
+  box-shadow:0 0 50px #f06292;
+  
+}
+bruh li:nth-child(4){
+  animation-delay:-0.8s;
+  background:#4fc3f7;
+  box-shadow:0 0 50px #4fc3f7;
+  
+}
+bruh li:nth-child(5){
+  animation-delay:-0.6s;
+  background:#ba68c8;
+  box-shadow:0 0 50px #ba68c8;
+  
+}
+bruh li:nth-child(6){
+  animation-delay:-0.4s;
+  background:#f57c00;
+  box-shadow:0 0 50px #f57c00;
+  
+}
+bruh li:nth-child(7){
+  animation-delay:-0.2s;
+  background:#673ab7;
+  box-shadow:0 0 50px #673ab7;
+  
+}
 
 
 @keyframes animateBackground {
