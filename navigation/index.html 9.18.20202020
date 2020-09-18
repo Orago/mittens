@@ -38,27 +38,25 @@
     <input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." value="" title="Type in a category">
     
     <ul id="myMenu">
-      <li><a>[M] - <a href="/navigation?search=[M]"> --Main Pages--</a></a></li>
-      <li><a>[M] - <a href="/" class="icon fa-home">Home</a></a></li>
-      <li><a>[M] - <a href="/projects" class="icon fa-window-maximize">Projects</a></a></li>
+<li><a href="/navigation?search=[M]">-[M]-   --Main Pages--</a></li>
+<li><a href="/">[M] - Home</a></li>
+<li><a href="/projects" class="rbgsdoft">[M] - Projects</a></li>
 <br>
 
 <li><a href="/navigation?search=[S]">-[S]-   --Social Media's--</a></li>
 <!--<li><a href="/fun/text-edit/">Text Editor</a></li>-->
-<li><a>[S] - <a href="https://www.youtube.com/channel/UCbVQOO0xb57ja74eLJQJ3Kg" class="icon fa-youtube">Youtube Channel</a></a></li>
-<li><a>[S] - <a href="https://discord.gg/zzthRpu" class="icon fa-discord">Discord Server</a></a></li>
-<li><a>[S] - <a href="https://github.com/Orago" class="icon fa-github">Github</a></a></li>
-<li><a>[S] - <a href="/social" class="icon fa-tag">All Social Media's</a></a></li>
+<li><a href="https://www.youtube.com/channel/UCbVQOO0xb57ja74eLJQJ3Kg" class="icon fa-youtube"> [S] - Youtube Channel</a></li>
+<li><a href="https://discord.gg/zzthRpu" class="icon fa-discord"> [S] - Discord Server</a></li>
+<li><a href="https://github.com/Orago" class="icon fa-github"> [S] - Github</a></li>
 <br>
 <li><a href="/navigation?search=[R]">-[R]-   --Random stuff--</a></li>
-<li><a>[R] - <a  href="/extra/donations/" class="icon fa-heart">Donate to Orago</a></a></li>
-<li><a>[R] - <a href="/team" class="icon fa-users">Partners</a></a> </li>
-<li><a>[R] - <a href="https://github.com/orago/mittens/tree/glitch" class="icon fa-code-fork">Source code</a></a> </li>
+<li><a > [R] - <a  href="/extra/donations/" class="icon fa-users"> Donate to Orago</a></a></li>
+<li><a href="/team" class="icon fa-users"> [R] - Partners</a></li>
 <br>
 <li><a href="/navigation?search=[C]">-[C]-   --Clocks List--</a></li>
-<li><a>[C] - <a href="/extra/timers/new-years.html" class="icon fa-clock-o">New Years Countdown</a></a></li>
-<li><a>[C] - <a href="/extra/timers/christmas.html" class="icon fa-clock-o">Christmas Countdown</a></a></li>
-<li><a>[C] - <a href="/extra/timers/world-clock.html" class="icon fa-clock-o">World Clock</a></a></li>
+<li><a href="/extra/timers/new-years.html"> [C] - New Years Countdown</a></li>
+<li><a href="/extra/timers/christmas.html"> [C] - Christmas Countdown</a></li>
+<li><a href="/extra/timers/world-clock.html"> [C] - World Clock</a></li>
 <br>
 
 <!--      <li><a href="#"></a></li>      -->
