@@ -12,7 +12,7 @@
       "type": "image/png"
     }
   ],
-  "scope": "/",
-  "start_url": "/index.html"
+  "scope": "/test",
+  "start_url": "/test/index.html"
   
 }
