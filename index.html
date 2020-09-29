@@ -1,8 +1,8 @@
 <!--
 	Project Mittens by Orago
 -->
+<!DOCTYPE html>
 <title>Mittens Homepage</title>
-<link rel="manifest" href="./manifest.json" />
 <meta property="og:title" content="Mittens Homepage | Main" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mittens.glitch.me" />
@@ -11,19 +11,17 @@
 <meta name="theme-color" content="#cb3837">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie32bfull.png">
-<link rel="manifest" href="manifest.json">
 
+
+<script src="./assets/js/index.js"></script>
+<link rel="manifest" href="manifest.webmanifest">
+<button class="add-button">Add to home screen</button>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./assets/css/main.css" /><!--Most of the css code-->
  
-    <script>
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js', { scope: './' })
-    }
-  </script>
     
 	</head>
   <!--Parallax mountains-->
@@ -51,7 +49,7 @@
             <script src="/assets/js/last-visit.js"></script>
             <br><br>
 						<ul class="actions">
-							<li><a href="./navigation" class="button big">Menu</a></li>
+							<li><a href="./navigation" class="button big">Add to home</a></li>
 						</ul>
 					</section>
 
@@ -129,7 +127,6 @@
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/skel.min.js"></script>
 <script src="./assets/js/main.js"></script>
-<script src="./assets/js/index.js"></script>
 <script data-ad-client="ca-pub-9294595868006747" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </body>
 </html>
