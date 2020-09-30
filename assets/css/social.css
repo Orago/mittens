@@ -143,14 +143,15 @@ ul li:hover:nth-child(5) a:after{
 }
 
 ul li:hover:nth-child(6) a{
-  background: #3b5998;
+  background: #626161
 }
 ul li:hover:nth-child(6) a:before{
-  background: #365492;
+  background: #535353;
 }
 ul li:hover:nth-child(6) a:after{
-  background: #4a69ad;
+  background: #6B6B6B;
 }
+
 
 
 
@@ -236,14 +237,23 @@ undo li:hover span {
   color:#fff;
 }
 
-
-
 undo li:hover:nth-child(1) a{
-  background: #414141;
+  background: #3b5998;
 }
 undo li:hover:nth-child(1) a:before{
-  background: #2B2B2B;
+  background: #365492;
 }
 undo li:hover:nth-child(1) a:after{
+  background: #4a69ad;
+}
+
+undo li:hover:nth-child(2) a{
+  background: #414141;
+}
+undo li:hover:nth-child(2) a:before{
+  background: #2B2B2B;
+}
+undo li:hover:nth-child(2) a:after{
   background: #555555;
 }
+

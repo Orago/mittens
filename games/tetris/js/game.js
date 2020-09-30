@@ -53,7 +53,7 @@ Game.prototype.start = function() {
         Painter.drawRetainedPiece(this.retainedPiece);
       }
       Painter.drawNextPieces(this.nextPieces);
-      Painter.drawTitle("I R O N T E T R I S");
+      Painter.drawTitle("S I M P L E T E T R I S");
       Painter.drawLineCounter("Lines: " + this.linesCleared);
       Painter.drawLevel("Level: " + this.currentLevel);
       Painter.drawRetainerText("Hold (Shift)");

@@ -17,14 +17,21 @@ var Painter = function () {
   }
 
   var colors = {
+    background: "#231034",
+    cells: "#3C1C59",
+    fullCells: "#753DBF",
+    ghost: "#4E4760",
+    pieces: "#334C90",
+    text: "#82B2CF"
+  }
+/*var colors = {
     background: "#661039",
     cells: "#974e7a",
     fullCells: "#BD1550",
     ghost: "#4d1c39",
     pieces: "#e29f39",
     text: "#ECD078"
-  }
-
+  }*/
   // var colors = {
   //   background: "#1e306e",
   //   cells: "#563672",
