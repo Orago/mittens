@@ -1,5 +1,5 @@
 {
-  "background_color": "purple",
+  "background_color": "blue",
   "description": "Shows random fox pictures. Hey, at least it isn't cats.",
   "display": "fullscreen",
   "icons": [
@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "Awesome fox pictures",
-  "short_name": "Foxes",
-  "start_url": "/test/index.html"
+  "name": "Mittens Team",
+  "short_name": "Mittens",
+  "start_url": "/index.html"
 }
