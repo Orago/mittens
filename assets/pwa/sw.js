@@ -1,6 +1,6 @@
 self.addEventListener('install', function(e) {
  e.waitUntil(
-   caches.open('mittens').then(function(cache) {
+   caches.open('fox-store').then(function(cache) {
      return cache.addAll([
        'https://mdn.github.io/pwa-examples/a2hs/',
        'https://mdn.github.io/pwa-examples/a2hs/index.html',
