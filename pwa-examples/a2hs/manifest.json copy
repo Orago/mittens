@@ -1,10 +1,7 @@
 {
-  "name": "Mittenz Team",
-  "short_name": "Mittenz",
-  "theme_color": "#9a1d1d",
-  "background_color": "#cb3837",
+  "background_color": "purple",
+  "description": "Shows random fox pictures. Hey, at least it isn't dogs.",
   "display": "fullscreen",
-  "orientation": "portrait",
   "icons": [
     {
       "src": "https://mdn.github.io/pwa-examples/a2hs/icon/fox-icon.png",
@@ -12,7 +9,8 @@
       "type": "image/png"
     }
   ],
-  "scope": "",
-  "start_url": "/test"
+  "name": "Awesome fox pictures",
+  "short_name": "Mittens",
   
+  "start_url": "/index.html"
 }

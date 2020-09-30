@@ -1,6 +1,6 @@
 @font-face {
   font-family: boldYear;
-  src: url(./fonts/bold_year/boldyear.otf);
+  src: url(https://github.com/adriwicked/html5-tetris/blob/master/css/fonts/bold_year/boldyear.otf?raw=true);
 }
 
 #canvas {  
