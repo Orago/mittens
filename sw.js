@@ -8,6 +8,9 @@ self.addEventListener('install', e => {
       // but you can add more such as style.css as your app grows
       return cache.addAll([
         './',
+        'https://mdn.github.io/pwa-examples/a2hs/icon/fox-icon.png',
+        'https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png',
+        'https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie32bfull.png',
         './index.html',
         './manifest.json',
         './index.js',
@@ -66,17 +69,6 @@ self.addEventListener('install', e => {
         './assets/css/error.css',
         './assets/css/font-awesome.min.css',
         './assets/css/social.css',
-        './assets/css',
-        './assets/css',
-        './assets/css',
-        './assets/css',
-        './assets/css',
-        './assets/css',
-        './assets/css',
-        
-        
-        
-        
         './games/tetris/index.html',
         './games/tetris/css/main.css',
         './games/tetris/js/board.js',
