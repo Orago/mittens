@@ -4,6 +4,5 @@
 	"repository": "https://github.com/orago/mittens",
 	"logo": "https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png?v=1594354728664",
 	"keywords": ["node", "website", "javascript", "css"],
-	"success_url": "/",
-	}
+	"success_url": "/"
 }
