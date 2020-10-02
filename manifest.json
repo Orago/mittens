@@ -5,7 +5,7 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "https://mdn.github.io/pwa-examples/a2hs/icon/fox-icon.png",
+      "src": "https://raw.githubusercontent.com/Orago/mittens/master/assets/images/boxie-x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
