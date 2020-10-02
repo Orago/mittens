@@ -49,7 +49,7 @@ The `master` branch is considered a stable branch capable of being released at a
 | **Last Updated**    | 2 October 2020 |
 | **EOL**             | Next release   |
 
-Refer to the [Github changelog](https://github.com/Orago/mittz-bot/commits/master) and the [Mittens Project Website](https://mittenscat.herokuapp.com/changes/bot/#mittz) to track active changes between releases.
+Refer to the [Github changelog](https://github.com/Orago/mittens/commits/master) and the [Mittens Project Website](https://mittenscat.herokuapp.com/changes/homepage) to track active changes between releases.
 
 ## Building Releases
 
@@ -74,7 +74,7 @@ We accept and encourage contributions from our community and sometimes give hugs
 
 Copyright © 2017-2020 Mittens Project
 
-> README format by vanilla <Br><https://github.com/vanilla/vanilla/readme.md>.
+> README format by vanilla <Br><https://github.com/vanilla/vanilla/README.md>.
 
 > See the full license at <Br><https://github.com/Orago/mittens/blob/master/LICENSE>.
 
