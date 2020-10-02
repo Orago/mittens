@@ -1,7 +1,3 @@
-
-
-
-
 // Code to handle install prompt on desktop
 
 let deferredPrompt;
