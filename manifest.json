@@ -1,11 +1,11 @@
 {
   "background_color": "#cb3837",
   "theme_color": "#9a1d1d",
-  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "description": "Kittiessssssssssssssssssssssss",
   "display": "fullscreen",
   "icons": [
     {
-      "src": "https://mdn.github.io/pwa-examples/a2hs/icon/fox-icon.png",
+      "src": "https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
