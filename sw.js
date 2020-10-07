@@ -9,31 +9,27 @@ self.addEventListener('install', e => {
       return cache.addAll([
         './',
         './index.html',
-        './manifest.json',
-        './index.js',
-        './License',
-        './manifest.json',
-        './u/index.html',
-        './team/index.html',
-        './social/index.html',
-        './team/index.html',
-        './projects/index.html',
-        './',
-        './',
-        './',
-        './',
-        './',
-        './',
-        './',
-        './',
-        './',
-        './'
-        
+        './manifest.json'
       ]);
     })
   );
 });
 
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+          // Return true if you want to remove this cache,
+          // but remember that caches are shared across
+          // the whole origin
+        }).map(function(cacheName) {
+          return caches.delete(cacheName);
+        })
+      );
+    })
+  );
+});
 // Our service worker will intercept all fetch requests
 // and check if we have cached the file
 // if so it will serve the cached file

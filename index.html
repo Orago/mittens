@@ -19,15 +19,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./assets/css/main.css" /><!--Most of the css code-->
- <script>// Register service worker to control making site work offline
+    
+    <!-- Register service worker to control making site work offline -->
+ <script>
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
-}</script>
+}
+</script>
     
 	</head>
-  <!--Parallax mountains-->
     <script src="./assets/js/loader.js"></script>
   
     <body>
@@ -49,11 +51,10 @@ if('serviceWorker' in navigator) {
 					<section id="intro" class="main">
 						<span class="icon fa-diamond major"></span>
 						<h2>Mittens Projects</h2>
-						<!--<p>The Mittens Games - Project is a small side project where Games that ive made are listed</p>-->
             <script src="/assets/js/last-visit.js"></script>
             <br><br>
 						<ul class="actions">
-              <!--<li><a href="#menu" class="button big">Game Project</a></li>--><li><button class="add-button button big">Add to home screen</button></li>
+              <li><button class="add-button button big">Add to home screen</button></li>
 						</ul>
 					</section>
 
