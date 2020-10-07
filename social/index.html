@@ -9,68 +9,249 @@
 <link rel="icon" type="image/png" href="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie32bfull.png">
 
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
-  @import url("https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css");
-</style>
-<link rel="stylesheet" href="../assets/css/social.css" /><!--Most of the css code-->
 <ul>
+    <li>
+    <a href="../">
+      <i class="fa fa-home" aria-hidden="true"></i>
+      <span> - Home<br> [Back]</span>
+    </a>
+  </li>
   <li>
     <a href="https://discord.gg/zzthRpu">
       <i class="fa fa-discord" aria-hidden="true"></i>
-      <span> - Discord [Orago#0051]</span>
+      <span> - Discord<br> [Orago#0051]</span>
     </a>
   </li>
   
   <li>
     <a href="https://www.reddit.com/user/Orago51">
       <i class="fa fa-reddit" aria-hidden="true"></i>
-      <span> - Reddit [Orago51]</span>
+      <span> - Reddit<br> [Orago51]</span>
     </a>
   </li>
-  
   <li>
     <a href="https://www.youtube.com/channel/UCbVQOO0xb57ja74eLJQJ3Kg">
       <i class="fa fa-youtube" aria-hidden="true"></i>
-      <span> - Youtube [MasterOrago]</span>
+      <span> - Youtube<br> [MasterOrago]</span>
     </a>
   </li>
   
   <li>
     <a href="https://twitter.com/OragoMosh">
       <i class="fa fa-twitter" aria-hidden="true"></i>
-      <span> - Twitter [OragoMosh]</span>
+      <span> - Twitter<br> [OragoMosh]</span>
     </a>
   </li>
   
   <li>
     <a href="https://www.instagram.com/oragocat/">
       <i class="fa fa-instagram" aria-hidden="true"></i>
-      <span> - Instagram [@oragocat]</span>
+      <span> - Instagram<br> [@oragocat]</span>
     </a>
   </li>
   
    <li>
     <a href="https://github.com/orago">
       <i class="fa fa-github" aria-hidden="true"></i>
-      <span> - Github [Orago]</span>
+      <span> - Github<br> [Orago]</span>
     </a>
   </li>
-  
-  
-</ul>
-<br><br>
-<undo>
   <li>
+    <a href="https://trello.com/orago">
+      <i class="fa fa-trello" aria-hidden="true"></i>
+      <span> - Trello<br> [Orago]</span>
+    </a>
+  </li>
+    <li>
     <a href="https://www.youtube.com/watch?v=llqWTJGUFeE">
       <i class="fa fa-facebook" aria-hidden="true"></i>
       <span> - Facebook sucks</span>
     </a>
   </li>
-  <li>
-    <a href="../">
-      <i class="fa fa-undo" aria-hidden="true"></i>
-      <span> - Back</span>
-    </a>
-  </li>
-</undo>
+</ul>
+<br><br>
+<br>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+  @import url("https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css");
+  
+  
+body {
+  margin:0;
+  padding:0;
+  background:#ccc;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+
+ul li {
+  list-style:none;
+  margin:0 5px;
+  padding-top: 30px;
+}
+
+ul li a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height:80px;
+  transition: .5s;
+  padding-right: 14px;
+}
+
+ul li a span {
+  padding:0;
+  margin:0;
+  position:absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: .5s;
+}
+
+ul li a {
+  text-decoration: none;
+  display:absolute;
+  display:block;
+  width:210px;
+  height:80px;
+  background: #fff;
+  text-align:left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0,0);
+  transition:.5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+ul li a:before {
+  content: '';
+  position: absolute;
+  top:10px;
+  left:-20px;
+  height:100%;
+  width:20px;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+ul li a:after {
+  content: '';
+  position: absolute;
+  bottom:-20px;
+  left:-10px;
+  height:20px;
+  width:100%;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+ul li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+}
+
+ul li:hover .fa {
+  color:#fff;
+}
+
+ul li:hover span {
+  color:#fff;
+}
+
+ul li:hover:nth-child(1) a{
+  background: #414141;
+}
+ul li:hover:nth-child(1) a:before{
+  background: #2B2B2B;
+}
+ul li:hover:nth-child(1) a:after{
+  background: #555555;
+}
+
+ul li:hover:nth-child(2) a{
+  background: #7289da;
+}
+ul li:hover:nth-child(2) a:before{
+  background: #5E72BC;
+}
+ul li:hover:nth-child(2) a:after{
+  background: #8A9BD8;
+}
+
+ul li:hover:nth-child(3) a{
+  background: #FF6314;
+}
+ul li:hover:nth-child(3) a:before{
+  background: #E75A14;
+}
+ul li:hover:nth-child(3) a:after{
+  background: #FB7A39;
+}
+
+
+
+ul li:hover:nth-child(4) a{
+  background: #dd4b39;
+}
+ul li:hover:nth-child(4) a:before{
+  background: #b33a2b;
+}
+ul li:hover:nth-child(4) a:after{
+  background: #e66a5a;
+}
+
+ul li:hover:nth-child(5) a{
+  background: #00aced;
+}
+ul li:hover:nth-child(5) a:before{
+  background: #097aa5;
+}
+ul li:hover:nth-child(5) a:after{
+  background: #53b9e0;
+}
+
+ul li:hover:nth-child(6) a{
+  background: #e4405f;
+}
+ul li:hover:nth-child(6) a:before{
+  background: #d81c3f;
+}
+ul li:hover:nth-child(6) a:after{
+  background: #e46880;
+}
+
+ul li:hover:nth-child(7) a{
+  background: #626161
+}
+ul li:hover:nth-child(7) a:before{
+  background: #535353;
+}
+ul li:hover:nth-child(7) a:after{
+  background: #6B6B6B;
+}
+ul li:hover:nth-child(8) a{
+  background: #7e5394;
+}
+ul li:hover:nth-child(8) a:before{
+  background: #665596;
+}
+ul li:hover:nth-child(8) a:after{
+  background: #8663a2;
+}
+ul li:hover:nth-child(9) a{
+  background: #3b5998;
+}
+ul li:hover:nth-child(9) a:before{
+  background: #365492;
+}
+ul li:hover:nth-child(9) a:after{
+  background: #4a69ad;
+}
+
+</style>
+
+<script src="https://p.trellocdn.com/embed.min.js"></script>
+<blockquote class="trello-card"><a href="https://trello.com/c/Og1S6T8w/19-the-mittenz-project-trello">The Mittenz Project trello.</a></blockquote>
+<script src="https://p.trellocdn.com/embed.min.js"></script>
