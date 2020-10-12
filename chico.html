@@ -1,5 +1,4 @@
-<!-- NEW-------------------------------->
-
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +11,62 @@
   </head>
   
 <body>
+
 <header id="banner" class="alt">
 				<div class="inner">
+                <div id="main">
 					<h1>Chico Entertainment</h1>
-
 					<p>A project started by <a href="/">ORAGO</a></p>
 				</div>
+                </div>
+  <span style="font-size:9vw;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
 			</header>
             
 <footer></footer>
 </body>
+
+
+
+<div class="row">
+  <div class="column_images">
+    <img src="https://www.w3schools.com/howto/img_nature.jpg" alt="Nature" style="width:100%" onclick="open_image(this);">
+  </div>
+  <div class="column_images">
+    <img src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%" onclick="open_image(this);">
+  </div>
+  <div class="column_images">
+    <img src="https://www.w3schools.com/howto/img_mountains.jpg" alt="Mountains" style="width:100%" onclick="open_image(this);">
+  </div>
+  <div class="column_images">
+    <img src="https://www.w3schools.com/howto/img_lights.jpg" alt="Lights" style="width:100%" onclick="open_image(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+</html>
+
+
+
+
+
 <style>
-/*{
-background:blue;
-}*/
+html {
+background:grey;
+}
 #banner {
 		color: rgba(255, 255, 255, 0.75);
 		display: -moz-flex;
@@ -55,12 +96,12 @@ background:blue;
 		text-align: center;
 		position: relative;
 		cursor: default;
+        font-size: 7vw;
 	}
 h1 {
   font-style: italic;
   color: black;
-  max-width: calc(100% - 5rem);
-  line-height: 1.1;
+
 }
 
 footer {
@@ -69,39 +110,160 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
+/****************************/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/**/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.column_images {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column_images img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column_images img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 </style>
-<!-- OLD-------------------------------->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chico Entertainment™ the best entertainer in Ohio, Since 2000.">
-
-    <title>Chico Entertainment</title>
-
-    <link id="favicon" rel="icon" href="https://th.bing.com/th/id/OIP.XZYcun6PwYIO2pPRvoy-NgHaHa" type="image/x-icon">
-  </head>
-  
-<body>
-<h1>Chico Entertainment</h1>
-<footer></footer>
-</body>
-<style>
-*{
-background:blue;
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
-h1 {
-  font-style: italic;
-  color: black;
-  max-width: calc(100% - 5rem);
-  line-height: 1.1;
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
 }
 
-footer {
-  margin-top: 1em;
-  padding-top: 1.5em;
-  border-top: 1px solid lightgrey;
+function open_image(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }
+</script>
 
-</style>
+
+</script>
