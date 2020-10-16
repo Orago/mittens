@@ -1,0 +1,33 @@
+{
+  "name":{
+    "non":"Non-existant User",
+    "null":"Null Name",
+    "orago":"Orago",
+    "karl":"Karl",
+    "aouab":"Aouab"},
+  "title":{
+    "non":"Non-existant User`s title",
+    "null":"Null Title",
+    "orago":"Code Dev & Pixel Artist",
+    "karl":"Content User, Manager & Beta Tester",
+    "aouab":"Male moroccan Music producer, Artist & Developer"},
+  "avatar":{
+    "null":"https://i.pinimg.com/originals/9d/9d/eb/9d9deb4712cc0eef6fe752decd8c9360.jpg",
+    "non":"https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png?v=1594354728664",
+    "orago":"https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fwaffles.png?v=1595670811915",
+    "karl":"https://i.pinimg.com/originals/9d/9d/eb/9d9deb4712cc0eef6fe752decd8c9360.jpg",
+    "aouab":"https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fhalobongo.gif?v=1595670798113"},
+  "url":{
+    "null":"https://mittens.glitch.me/u/",
+    "non":"https://mittens.glitch.me/u/",
+    "orago":"https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fwaffles.png?v=1595670811915",
+    "karl":"https://i.pinimg.com/originals/9d/9d/eb/9d9deb4712cc0eef6fe752decd8c9360.jpg",
+    "aouab":"https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fhalobongo.gif?v=1595670798113"},
+  "description":{
+    "non":"Non-existant User`s description",
+    "null":"Guardian of anything null.",
+    "orago":"Idk like a 8 bit artist, enjoys coding simple things, and leader of all 9 cat realms.",
+    "karl":"I am A 16 year old, male, content tester, <br>and can be very chill.",
+    "aouab":"I`m 16 years old, male, live in Marrakesh and I`m really passionate about what I do! I`ve been making music for 3 years and developing for more than 8 years."},
+  "profiles":["orago","karl","aouab"]
+}

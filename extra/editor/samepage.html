@@ -1,0 +1,17 @@
+<script>
+function input() {
+  document.getElementById("input").value = ""
+}
+function output() {
+  document.getElementById("output").innerHTML = document.getElementById("input").value
+}
+</script>
+<style>footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid lightgrey;
+}</style>
+  <body onload="input();"></body>
+  <button onclick="output()">Test</button><br>
+ <textarea type="text" class="inp" id="input" placeholder="Type here" value="" title="Input text.."></textarea><br>Output:<br>
+<footer> <a id="output"></a></footer>

@@ -1,0 +1,20 @@
+<script>
+function input() {
+  document.getElementById("input").value = ""
+}
+function output() {
+var output = window.open("", "Mittz Editor", "width=1000,height=1000");
+output.document.write('<a id="output"></a>')
+  output.document.title = "Mittz Editor"
+  output.document.getElementById("output").innerHTML = document.getElementById("input").value
+}
+
+</script>
+<style>
+.inp {
+
+}
+</style>
+  <body onload="input();"></body>
+  <button onclick="output()">Test Code</button><br>
+ <textarea type="text" class="inp" id="input" placeholder="Type here" value="" title="Input text.."></textarea>

@@ -12,24 +12,22 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie32bfull.png">
 <script src="./index.js" defer></script>
-<link rel="manifest" href="/manifest.json">
+<!--<link rel="manifest" href="/manifest.json">-->
 
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./assets/css/main.css" /><!--Most of the css code-->
-    
-    <!-- Register service worker to control making site work offline -->
- <script>
+ <!--<script>// Register service worker to control making site work offline
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
-}
-</script>
+}</script>-->
     
 	</head>
+  <!--Parallax mountains-->
     <script src="./assets/js/loader.js"></script>
   
     <body>
@@ -51,10 +49,11 @@ if('serviceWorker' in navigator) {
 					<section id="intro" class="main">
 						<span class="icon fa-diamond major"></span>
 						<h2>Mittens Projects</h2>
+						<!--<p>The Mittens Games - Project is a small side project where Games that ive made are listed</p>-->
             <script src="/assets/js/last-visit.js"></script>
             <br><br>
 						<ul class="actions">
-              <li><button class="add-button button big">Add to home screen</button></li>
+              <!--<li><a href="#menu" class="button big">Game Project</a></li>--><li><button class="add-button button big">Add to home screen</button></li>
 						</ul>
 					</section>
 
@@ -116,10 +115,7 @@ if('serviceWorker' in navigator) {
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/master_orago/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a onclick="mail()" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="./social" class="icon fa-heart"><span class="label">Social Medias</span></a></li>
 						</ul>
             
             <!-- Copyright -->
@@ -129,9 +125,27 @@ if('serviceWorker' in navigator) {
     
 		<!-- Scripts -->
 			<!--required Javascript assets to run page-->
-<script src="./assets/js/jquery.min.js"></script>
-<script src="./assets/js/skel.min.js"></script>
 <script src="./assets/js/main.js"></script>
 <script data-ad-client="ca-pub-9294595868006747" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </body>
+  
 </html>
+<navigation>
+  <link rel="stylesheet" href="./assets/css/navigation.css" /><!--Most of the css code-->
+  <input id="hamburger" class="hamburger" type="checkbox"/>
+  <label class="hamburger" for="hamburger">
+    <i></i>
+    <text>
+      <close>close</close>
+      <open>menu</open>
+    </text>
+  </label>
+  <section class="drawer-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">notifications</a></li>
+          <li><a href="#">system administration</a></li>
+          <li><a href="#">support</a></li>
+      </ul>
+      </section>
+</navigation>

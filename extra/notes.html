@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Sticky notes using CSS3 and Google Fonts (Step 5)</title>
+<link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css"> 
+<style type="text/css">
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:3em;
+  background:#666;
+  color:#fff;
+}
+  input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+.title:focus{
+  outline: none;
+  font-size:100%;
+  font-weight:normal;
+}
+.content:focus{
+  outline: none;
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+ul li .title{
+  font-size:100%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li .content{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:80%;
+}
+ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+</style>
+  <script>
+  function new_note() {
+  document.getElementById("notes").innerHTML += "<br>"+"<li>"+"<a>"+'<input type="text" class="title" placeholder="Title" value="" title="Type in a title">'+'<input type="text" class="content" placeholder="Content" value="" title="Type in a title">'+"</a>"+"</li>";
+}
+  
+  
+  </script>
+  
+</head>
+  <body onload="new_note();">
+<body>
+<ol>
+    <li><a onclick="new_note();">New Sticky Note</a></li>
+  </ol>
+  <ul id="notes">
+    <!--<li>
+      <a>
+        <input type="text" class="title" placeholder="Title" value="" title="Type in a title">
+        <input type="text" class="content" placeholder="Content" value="" title="Type in a title">
+      </a>
+    </li>-->
+  </ul>
+</body>
+  </body></html>

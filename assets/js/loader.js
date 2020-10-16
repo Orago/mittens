@@ -12,7 +12,7 @@ document.getElementById("mySearch").focus();localStorage.setItem("nav", "true");
    }else {closeNav(); // Messy way to open navigation bar
           localStorage.setItem("nav", "false");document.getElementById("mySearch").blur();}}});
 */
-console.clear();
+/*console.clear();
 
 const wordContainerEl = document.querySelector("[data-word]");
 const word = wordContainerEl.getAttribute("data-word");
@@ -33,3 +33,4 @@ for (let i = 0; i < wordRepeatTimes; i++) {
 	}
 	wordContainerEl.appendChild(wordEl);
 }
+*/

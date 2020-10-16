@@ -1,0 +1,114 @@
+<title>Mittens Projects</title>
+<meta property="og:title" content="Mittens Homepage | Navigation" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mittens.glitch.me" />
+<meta property="og:image" content="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png?v=1594354728664" />
+<meta property="og:description" content="The navigation page of Mittens." />
+<meta name="theme-color" content="#cb3837">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie32bfull.png">
+
+<html >
+	<head>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/assets/css/main.css" /><!--Most of the css code-->
+    <link rel="stylesheet" href="/assets/css/icons.css" />
+	</head>
+  <!--Parallax mountains-->
+<script src="/assets/js/loader.js"></script>
+    <body>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Mittens Homepage</h1>
+					<p>A project started by <a href="/orago">ORAGO</a></p>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+      
+
+			<div id="wrapper">
+<div class="row">
+  <div class="left" >
+    <br><br><br>
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." value="" title="Type in a category">
+    
+    <ul id="myMenu">
+<li><a href="/navigation?search=[M]">-[M]-   --Main Pages--</a></li>
+<li><a href="/">[M] - Home</a></li>
+<li><a href="/projects" class="rbgsdoft">[M] - Projects</a></li>
+<br>
+
+<li><a href="/navigation?search=[S]">-[S]-   --Social Media's--</a></li>
+<!--<li><a href="/fun/text-edit/">Text Editor</a></li>-->
+<li><a href="https://www.youtube.com/channel/UCbVQOO0xb57ja74eLJQJ3Kg" class="icon fa-youtube"> [S] - Youtube Channel</a></li>
+<li><a href="https://discord.gg/zzthRpu" class="icon fa-discord"> [S] - Discord Server</a></li>
+<li><a href="https://github.com/Orago" class="icon fa-github"> [S] - Github</a></li>
+<br>
+<li><a href="/navigation?search=[R]">-[R]-   --Random stuff--</a></li>
+<li><a > [R] - <a  href="/extra/donations/" class="icon fa-users"> Donate to Orago</a></a></li>
+<li><a href="/team" class="icon fa-users"> [R] - Partners</a></li>
+<br>
+<li><a href="/navigation?search=[C]">-[C]-   --Clocks List--</a></li>
+<li><a href="/extra/timers/new-years.html"> [C] - New Years Countdown</a></li>
+<li><a href="/extra/timers/christmas.html"> [C] - Christmas Countdown</a></li>
+<li><a href="/extra/timers/world-clock.html"> [C] - World Clock</a></li>
+<br>
+
+<!--      <li><a href="#"></a></li>      -->
+    </ul>
+  </div>
+  </div>
+          <!-- CTA -->
+					<section id="cta" class="main special">
+						<ul class="actions">
+              <li><a href="/" class="button big">HomePage</a></li>
+              <br><br>
+							<li><a href="/#nav" class="button big">Back</a></li>
+						</ul>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-heart"> Social Media's</a></li>
+						</ul>
+            
+            <!-- Copyright -->
+						<p class="copyright">&copy;<script language="JavaScript"> today=new Date();y0=today.getFullYear();</script>2018-<script language="JavaScript"> document.write(y0);</script> Project Mittens.</p>
+					</footer>
+			</div>
+    <script>
+    let params = (new URL(document.location)).searchParams;
+    var text = document.getElementById('mySearch');
+    if (params.get('search')==null){text.value += "";}else{text.value += params.get('search');}
+    Search();
+    function Search() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+
+    }
+    
+    </script>
+		<!-- Scripts -->
+			<!--required Javascript assets to run page-->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<title>Mittens Text Editor</title>
+<meta property="og:title" content="Mittens Homepage | Text Editor" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mittens.glitch.me" />
+<meta property="og:image" content="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie-2048px.png?v=1594354728664" />
+<meta property="og:description" content="The text editor page of Mittens." />
+<meta name="theme-color" content="#cb3837">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="https://cdn.glitch.com/65f81ac1-5972-4a88-a61a-62585d79cfc0%2Fboxie32bfull.png">
+<!--
+	Project Mittens by Orago
+-->
+<html>
+	<head>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+  
+
+  
+  
+	<body>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Project Mittens - Text Editor</h1>
+					<p>A project started by <a href="/orago">ORAGO</a></p>
+				</div>
+			</header>
+    
+    
+    
+    
+  <!-- Wrapper -->
+			<div id="wrapper">
+<script type="text/javascript">
+function remember(){
+originalText = "";
+originalText = document.textConvForm.textConvArea.value;}
+function convert2ALLCAPS(){
+original = document.textConvForm.textConvArea.value;
+ALLCAPS = original.toUpperCase();
+document.textConvForm.textConvArea.value = ALLCAPS;}
+function convert2nocaps(){
+original = document.textConvForm.textConvArea.value;
+nocaps = original.toLowerCase();
+document.textConvForm.textConvArea.value = nocaps;}
+function convert2Hacker(){
+original = document.textConvForm.textConvArea.value;
+normal = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+hacker = ["@","ß","¢","Ð","€","ƒ","ç","|¬","¡","¿","/<","|","^^","ñ","¤","þ","¶","®","§","†","ü",">","%%%","×","¥","Ž"];
+haxored = original;
+for (i = 0; i < normal.length; i++){
+haxored = haxored.replace(RegExp(normal[i],"gi"),hacker[i]);}
+haxored = haxored.replace(/%%%/gi,"vv");
+document.textConvForm.textConvArea.value = haxored;}
+function convert2PigLatin(){
+original = document.textConvForm.textConvArea.value;
+noriginal = original;
+noriginal = noriginal.replace(/\"/gi,"");
+working = new Array;
+working = noriginal.split(" ");
+for (i = 0; i < working.length; i++){
+firstChar = working[i].charAt(0);
+secondChar = working[i].charAt(1);
+thirdChar = working[i].charAt(2);
+wordLength = working[i].length;
+punctuation = ["!","?",";",":",".",","];
+upCaseLet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+if (firstChar == "a" || firstChar == "e" || firstChar == "i" || firstChar == "o" || firstChar == "u" || firstChar == "y" || firstChar == "A" || firstChar == "E" || firstChar == "I" || firstChar == "O" || firstChar == "U" || firstChar == "Y"){working[i]=working[i]+"way";}
+else if (firstChar == "q" || firstChar == "Q" && secondChar == "u" || secondChar == "U"){
+newWord="";for (l = 1; l < working[i].length; l++){newWord=newWord+working[i].charAt(l+1);}
+working[i]=newWord+firstChar+secondChar+"ay";}
+else if(isNaN(working[i])){
+if (secondChar != "a" && secondChar != "e" && secondChar != "i" && secondChar != "o" && secondChar != "u" && secondChar != "A" && secondChar != "E" && secondChar != "I" && secondChar != "O" && secondChar != "U"){
+if (thirdChar != "a" && thirdChar != "e" && thirdChar != "i" && thirdChar != "o" && thirdChar != "u" && thirdChar != "A" && thirdChar != "E" && thirdChar != "I" && thirdChar != "O" && thirdChar != "U"){
+newWord="";for (m = 2; m < working[i].length; m++){newWord=newWord+working[i].charAt(m+1);}
+working[i]=newWord+firstChar+secondChar+thirdChar+"ay";}
+else{newWord="";for (k = 1; k < working[i].length; k++){newWord=newWord+working[i].charAt(k+1);}
+working[i]=newWord+firstChar+secondChar+"ay";}}
+else{newWord="";for (j = 0; j < working[i].length; j++){newWord=newWord+working[i].charAt(j+1);}
+working[i]=newWord+firstChar+"ay";}}
+for (q = 0; q < punctuation.length; q++){
+if(working[i].indexOf(punctuation[q])!= -1){
+working[i] = working[i].replace(/\!/gi,"");
+working[i] = working[i].replace(/\?/gi,"");
+working[i] = working[i].replace(/\;/gi,"");
+working[i] = working[i].replace(/\:/gi,"");
+working[i] = working[i].replace(/\./gi,"");
+working[i] = working[i].replace(/\,/gi,"");
+if(punctuation[q] == ","){working[i] = working[i]+"%%%";}
+else{working[i] = working[i]+punctuation[q];}}}
+for (n = 0; n < upCaseLet.length; n++){
+if(working[i].indexOf(upCaseLet[n])!= -1){
+working[i] = working[i].toLowerCase();
+newWord="";for (o = 0; o < working[i].length; o++){
+newWord=newWord+working[i].charAt(o+1);}
+working[i] = working[i].charAt(0).toUpperCase()+newWord;}}}
+working = working.toString();
+working = working.replace(/,/gi," ");
+pigLatin = working.replace(/%%%/gi,",");
+document.textConvForm.textConvArea.value = pigLatin;}
+function convert2drawkcaB(){
+original = document.textConvForm.textConvArea.value;
+drawkcabWork = original.split("");
+drawkcabWork = drawkcabWork.reverse();
+drawkcab = "";
+for (i = 0; i < drawkcabWork.length; i++){
+drawkcab = drawkcab+drawkcabWork[i];}
+document.textConvForm.textConvArea.value = drawkcab;}
+function reSet(){
+document.textConvForm.textConvArea.value = originalText;}
+function copy(){
+copied = document.textConvForm.textConvArea.createTextRange();
+copied.execCommand("Copy");}
+function clearBox(){
+document.textConvForm.textConvArea.value = "";
+document.textConvForm.textConvArea.focus();}
+</script>
+
+<table cellpadding="2" cellspacing="1" ><tr><td>
+<form name="textConvForm">
+<textarea name="textConvArea" rows="10" cols="30" wrap="soft">
+Project Mittens - Text Editor, a fun and interactive javascript tool that 
+will convert text to your choice.
+  
+https://mittens.glitch.me
+  </textarea></form></td><td>
+<input type="button" value="All Caps" onclick="remember();convert2ALLCAPS()"><br />
+<input type="button" value="No Caps" onclick="remember();convert2nocaps()"><br />
+<input type="button" value="Hackerize" onclick="remember();convert2Hacker()"><br />
+<input type="button" value="Pig Latin" onclick="remember();convert2PigLatin()"><br />
+<input type="button" value="Backward" onclick="remember();convert2drawkcaB()"><br />
+<input type="button" value="Undo (Once)" onclick="reSet()"><br />
+<input type="button" value="Copy" onclick="copy()"> 
+<input type="button" value="Clear" onclick="remember();clearBox()"><br />
+</td></tr></table>  
+        <!-- CTA -->
+					<section id="cta" class="main special">
+						<ul class="actions">
+              <li><a href="/" class="button big">HomePage</a></li>
+              <br><br>
+							<li><a href="/fun" class="button big">Back</a></li>
+						</ul>
+					</section>
+        
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/master_orago/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a onclick="mail()" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+            <!-- Copyright -->
+						<p class="copyright">&copy;
+              <script language="JavaScript"> today=new Date();y0=today.getFullYear();</script>
+              2018-<script language="JavaScript"> document.write(y0);</script> 
+      Project Mittens.</p>
+					</footer>
+			</div>
+    
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+      <script src="/assets/js/mailme.js"></script>
+      <script src="/assets/js/localstore.js"></script>
+      
+    </body>
+</html>

@@ -30,6 +30,7 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
+
 // Our service worker will intercept all fetch requests
 // and check if we have cached the file
 // if so it will serve the cached file
