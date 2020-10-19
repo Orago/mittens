@@ -22,7 +22,7 @@
  <!--<script>// Register service worker to control making site work offline
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/sw.js')
+           .register('./sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }</script>-->
     
@@ -130,8 +130,10 @@ if('serviceWorker' in navigator) {
    </body>
   
 </html>
+
+
 <navigation>
-  <link rel="stylesheet" href="./assets/css/navigation.css" /><!--Most of the css code-->
+<link rel="stylesheet" href="./assets/css/navigation.css" /><!--Most of the css code-->
   <input id="hamburger" class="hamburger" type="checkbox"/>
   <label class="hamburger" for="hamburger">
     <i></i>
@@ -140,12 +142,14 @@ if('serviceWorker' in navigator) {
       <open>menu</open>
     </text>
   </label>
-  <section class="drawer-list">
+  <section class="drawer-list" style="background-color:rgba(45, 150, 150, 0.9);">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">notifications</a></li>
-          <li><a href="#">system administration</a></li>
-          <li><a href="#">support</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./social">Social Medias</a></li>
+          <li><a href="./projects">Projects</a></li>
+          <li><a href="./navigation">Navigation</a></li>
+          <li><a href="./projects">Projects</a></li>
+          <!--<li><a href="#">support</a></li>-->
       </ul>
       </section>
 </navigation>

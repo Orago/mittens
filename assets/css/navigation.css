@@ -1,5 +1,5 @@
 navigation{
- z-index:10000; 
+ z-index:1000; 
 }
  .drawer-list {
 	 position: fixed;
@@ -16,7 +16,7 @@ navigation{
 	 transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
 	 border-bottom-left-radius: 100vw;
 	 background-color: #3d88ce;
-	 background-color: rgba(45, 150, 150, 0.9);
+	 background-color: rgba(158, 158, 158, 0.9);/*Background Color*/
 }
  @media (min-width: 768px) {
 	 .drawer-list {

@@ -1,0 +1,16 @@
+{
+  "background_color": "#cb3837",
+  "theme_color": "#9a1d1d",
+  "description": "Kittiessssssssssssssssssssssss",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/Orago/mittens/master/assets/images/boxie-x192-big.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Mittens Team",
+  "short_name": "Mittens",
+  "start_url": "/dev2.html"
+}
