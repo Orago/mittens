@@ -4,55 +4,53 @@
 function output() {
   //document.getElementById("output").innerHTML = document.getElementById("input").value
   let params = (new URL(document.location)).searchParams;
-    var text = document.getElementById('mySearch');
-    if (params.get('background')==null | params.get('background')==""){return}
+    if (params.get('background')==null | params.get('background')==""){}
     else{document.getElementById("html").style.background = params.get('background');}
     
-  if (params.get('title')==null | params.get('title')==""){return}
+  if (params.get('title')==null | params.get('title')==""){}
   else{document.title = params.get('title');}
   
-  if (params.get('header')==null | params.get('header')==""){return}
+  if (params.get('header')==null | params.get('header')==""){}
   else{document.write("<h1>"+params.get('header')+"</h1>");}
-  if (params.get('website')==null | params.get('website')==""){return}
-  else{`<li><a href="${params.get('website')}"><i class="fa fa-home" aria-hidden="true"></i><span> - Homepage</span></a></li>`);}
-}
-if (params.get('discord')==null | params.get('discord')==""){return}
+  document.write("<ul>")
+  if (params.get('website')==null | params.get('website')==""){}
+  else{document.write(`<li><a href="${params.get('website')}"><i class="fa fa-home" aria-hidden="true"></i><span> - Homepage</span></a></li>`);}
+      
+if (params.get('discord')==null | params.get('discord')==""){}
   else{document.write(`<li><a href="${params.get('discord')}"><i class="fa fa-discord" aria-hidden="true"></i><span> - Discord</span></a></li>`);}
-}
-if (params.get('youtube')==null | params.get('youtube')==""){return}
+       
+if (params.get('youtube')==null | params.get('youtube')==""){}
   else{document.write(`<li><a href="${params.get('youtube')}"><i class="fa fa-youtube" aria-hidden="true"></i><span> - Youtube</span></a></li>`);}
-}
-if (params.get('twitter')==null | params.get('twitter')==""){return}
+       
+if (params.get('twitter')==null | params.get('twitter')==""){}
   else{document.write(`<li><a href="${params.get('twitter')}"><i class="fa fa-twitter" aria-hidden="true"></i><span> - Twitter</span></a></li>`);}
-}
-if (params.get('instagram')==null | params.get('instagram')==""){return}
+       
+if (params.get('instagram')==null | params.get('instagram')==""){}
   else{document.write(`<li><a href="${params.get('twitter')}"><i class="fa fa-twitter" aria-hidden="true"></i><span> - Twitter</span></a></li>`);}
-}
-if (params.get('facebook')==null | params.get('facebook')==""){return}
+       
+if (params.get('facebook')==null | params.get('facebook')==""){}
   else{document.write(`<li><a href="${params.get('facebook')}"><i class="fa fa-facebook" aria-hidden="true"></i><span> - Facebook</span></a></li>`);}
-}
-if (params.get('github')==null | params.get('github')==""){return}
+       
+if (params.get('github')==null | params.get('github')==""){}
   else{document.write(`<li><a href="${params.get('github')}"><i class="fa fa-github" aria-hidden="true"></i><span> - Github</span></a></li>`);}
-}
-
-if (params.get('reddit')==null | params.get('reddit')==""){return}
+       
+if (params.get('reddit')==null | params.get('reddit')==""){}
   else{document.write(`<li><a href="${params.get('reddit')}"><i class="fa fa-reddit" aria-hidden="true"></i><span> - Reddit</span></a></li>`);}
-}
-if (params.get('trello')==null | params.get('trello')==""){return}
+       
+if (params.get('trello')==null | params.get('trello')==""){}
   else{document.write(`<li><a href="${params.get('trello')}"><i class="fa fa-trello" aria-hidden="true"></i><span> - Trello</span></a></li>`);}
-}
-if (params.get('nertivia')==null | params.get('nertivia')==""){return}
+       
+if (params.get('nertivia')==null | params.get('nertivia')==""){}
   else{document.write(`<li><a href="${params.get('nertivia')}"><svg class="nertivia">
  <use xlink:href="#nertivia" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
 </svg><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Nertiva</span></a></li>`);}
-}
+
 document.write(`<li><a href="https://mittenscat.herokuapp.com"><i class="fa fa-share" aria-hidden="true"></i><span> - Made using Mittz Urls.</span></a></li>`);
-}
+  document.write("</ul>")
+      }      
 
 </script>
 </html>
-
-
 <style>
   @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
   @import url("https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css");
@@ -61,7 +59,7 @@ document.write(`<li><a href="https://mittenscat.herokuapp.com"><i class="fa fa-s
 body {
   margin:0;
   padding:0;
-  background:#ccc;
+  /*background:#ccc;*/
   font-family: 'Roboto Condensed', sans-serif;
 
 }
@@ -153,6 +151,8 @@ ul li:hover a:after{
 
 
 </style>
+
+
 
 <!-- custom svg-->
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
