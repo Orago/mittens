@@ -13,8 +13,7 @@ function output() {
   
   if (params.get('header')==null | params.get('header')==""){return}
   else{document.write("<h1>"+params.get('header')+"</h1>");}
-}
-if (params.get('website')==null | params.get('website')==""){return}
+  if (params.get('website')==null | params.get('website')==""){return}
   else{`<li><a href="${params.get('website')}"><i class="fa fa-home" aria-hidden="true"></i><span> - Homepage</span></a></li>`);}
 }
 if (params.get('discord')==null | params.get('discord')==""){return}
@@ -47,7 +46,9 @@ if (params.get('nertivia')==null | params.get('nertivia')==""){return}
  <use xlink:href="#nertivia" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
 </svg><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Nertiva</span></a></li>`);}
 }
-`<li><a href="https://mittenscat.herokuapp.com"><i class="fa fa-share" aria-hidden="true"></i><span> - Made using Mittz Urls.</span></a></li>`);
+document.write(`<li><a href="https://mittenscat.herokuapp.com"><i class="fa fa-share" aria-hidden="true"></i><span> - Made using Mittz Urls.</span></a></li>`);
+}
+
 </script>
 </html>
 
