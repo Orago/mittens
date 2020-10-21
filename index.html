@@ -27,9 +27,8 @@ if('serviceWorker' in navigator) {
 }</script>-->
     
 	</head>
-  <!--Parallax mountains-->
+  <!--Loader-->
     <script src="./assets/js/loader.js"></script>
-  
     <body>
       
 		<!-- Header -->
@@ -75,7 +74,7 @@ if('serviceWorker' in navigator) {
 								<h3>Null</h3>
 							</header>
               <p>Nothing to see here</p><ul class="actions">
-								<li><a href="./505" class="button">More</a></li>
+								<li><a onclick="notification('Why did you click this...')" class="button">More</a></li>
 							</ul>
               
 						</article>
@@ -132,16 +131,17 @@ if('serviceWorker' in navigator) {
 		<!-- Scripts -->
 			<!--required Javascript assets to run page-->
 <script src="./assets/js/main.js"></script>
+      
 <script data-ad-client="ca-pub-9294595868006747" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </body>
   
 </html>
 
 
+<div id="assets"></div><!--Loads the extra files that aren't written in the document.-->
 
-
-<navigation>
-<link rel="stylesheet" href="./assets/css/navigation.css" /><!--Most of the css code-->
+<!--<navigation>
+<link rel="stylesheet" href="./assets/css/navigation.css" />Most of the css code
   <input id="hamburger" class="hamburger" type="checkbox"/>
   <label class="hamburger" for="hamburger">
     <i></i>
@@ -157,7 +157,6 @@ if('serviceWorker' in navigator) {
           <li><a href="./projects">Projects</a></li>
           <li><a href="./navigation">Navigation</a></li>
           <li><a href="./projects">Projects</a></li>
-          <!--<li><a href="#">support</a></li>-->
       </ul>
       </section>
-</navigation>
+</navigation>-->
